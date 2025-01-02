@@ -1,0 +1,19 @@
+paths-ignore:
+  - '**/test/**'
+  - '**/tests/**'
+  - '**/*.test.*'
+  - '**/node_modules/**'
+
+query-filters:
+  - include:
+      tags:
+        - "security"
+        - "correctness"
+        - "data-flow"
+
+database:
+  retention-days: 14
+
+packs:
+  - codeql/javascript-queries
+  - codeql/python-queries
